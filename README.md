@@ -92,8 +92,8 @@ The provided Jupyter Notebook details each analysis step, enabling replication o
 
 Execute the analysis by launching the Jupyter notebook within the notebook's directory:
 
-```bash
-jupyter notebook AB_Testing_using_ML.ipynb
+  ```bash
+  jupyter notebook AB_Testing_using_ML.ipynb
 
 ## Conclusion
 
