@@ -14,7 +14,15 @@ This initiative addresses the shortcomings of conventional A/B tests by incorpor
 
 #### Experiment: "Free Trial" Screener
 
-The experiment conducted by Udacity gauges prospective students' available time to devote to new courses. By utilizing this data, we aim to facilitate the enrollment process and mitigate trial dropouts by managing time-related expectations.
+In the experiment, Udacity tested a change where if the student clicked “start free trial”, they were asked how much time they had available to devote to the course.
+
+If the student indicated 5 or more hours per week, they would be taken through the checkout process as usual. If they indicated fewer than 5 hours per week, a message would appear indicating that Udacity courses usually require a greater time commitment for successful completion.
+
+Why Implement the Form?
+
+The goal with this popup was that this might set clearer expectations for students upfront, thus reducing the number of frustrated students who left the free trial because they didn’t have enough time.
+
+However, what Udacity wants to avoid is “significantly” reducing the number of students that continue past the free trial and eventually complete the course
 
 #### Project Goal
 
