@@ -95,6 +95,26 @@ The provided Jupyter Notebook details each analysis step, enabling replication o
 2. Preliminary data inspection.
 3. Data preparation for model fitting.
 4. Model building and validation.
+   
+## Results and Recommendations
+
+### Executive Summary of Enrollment Predictive Analysis
+
+#### Context
+A predictive analysis to forecast online course enrollments using Linear Regression, Decision Tree, and XGBoost.
+
+#### Findings
+- **Linear Regression**: Adequate for initial predictions, with a significant role of clicks and group categorization.
+- **Decision Tree**: Underperformed, suggesting a need for model structure refinement.
+- **XGBoost**: Best performer with prospects for further optimization.
+
+#### Recommendations
+- Focus on XGBoost for future model iterations.
+- Broaden data collection and feature creation.
+- Integrate more nuanced user behavior and time-related features to enhance model robustness.
+
+#### Concluding Thoughts
+The models create a solid base for forecasting but require further development to become more accurate and actionable.
 
 ## Running the Analysis
 
