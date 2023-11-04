@@ -98,4 +98,4 @@ jupyter notebook AB_Testing_using_ML.ipynb
 ## Conclusion
 
 This project serves as a comprehensive guide for integrating ML into A/B testing frameworks. It demonstrates how ML can be applied to real-world business problems, providing a more nuanced understanding of user behavior and driving more effective business strategies.
-![image](https://github.com/alesanchez14/A-B-testing-using-Machine-Learning/assets/105001857/cfd9d9a9-d9ff-4635-acee-def31cf11d09)
+
