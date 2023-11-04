@@ -2,75 +2,100 @@
 
 ## Introduction
 
-This project applies Machine Learning (ML) to the robust methodology of A/B Testing, offering a step-by-step guide to improving digital marketing decisions through data science.
+This project bridges the gap between traditional A/B Testing and Machine Learning (ML) to refine digital marketing decisions. We present a step-by-step guide on utilizing data science to enhance the understanding and effectiveness of A/B Testing.
 
 ### Motivation
 
-A/B Testing is a powerful strategy to validate changes in user interfaces and marketing strategies. By employing ML, we aim to account for the complexity of user behavior which traditional statistical methods may oversimplify. The end goal is to maximize user engagement and sales by understanding and leveraging the nuances of customer interactions.
+A/B Testing is instrumental in optimizing user interfaces and marketing tactics. Our approach enriches this testing with ML to embrace the intricate patterns of user behavior that standard statistical methods may not fully capture. We seek to bolster user engagement and increase sales by exploiting the subtle dynamics of customer interactions.
 
 ### About the Project
 
-Traditional A/B tests often fall short in painting the full picture due to their binary nature—focusing solely on the treatment and control groups' outcomes. This project aims to capture the multifaceted aspects of customer behavior by implementing an ML approach to A/B Testing, providing deeper insights into what truly influences user decisions.
+This initiative addresses the shortcomings of conventional A/B tests by incorporating an ML perspective. We strive to unravel the complex dimensions of customer behavior to provide a rounded view of the factors influencing user choices.
 
 #### Experiment: "Free Trial" Screener
 
-Udacity conducted an experiment asking students how much time they could dedicate to a course. The responses were used to guide the students through the enrollment process, with the intention of setting clear expectations and reducing trial abandonment due to time constraints.
+The experiment conducted by Udacity gauges prospective students' available time to devote to new courses. By utilizing this data, we aim to facilitate the enrollment process and mitigate trial dropouts by managing time-related expectations.
 
 #### Project Goal
 
-The analysis will identify which features contribute to enrollments and the effect of the "Setting Expectations" form on student enrollment figures.
+Our analysis focuses on pinpointing the key attributes that influence course enrollments and assessing the impact of the "Setting Expectations" form on student signup rates.
 
-The users that experience the form will be denoted as “Experiment = 1” The control group (users that don’t see the form) will be denoted as “Experiment = 0”.
-
+Designations within the data are as follows:
+- “Experiment = 1” for users who encountered the form.
+- “Experiment = 0” for users in the control group who did not.
 
 ## Data
 
-The dataset includes 37 daily observations across the following columns:
+The data spans 37 days and includes metrics such as:
 
-- `Date`: Day, month, and day of the month.
-- `Pageviews`: Total page views per day.
-- `Clicks`: Total clicks per day for the given page.
-- `Enrollments`: Daily enrollment numbers.
-- `Payments`: Daily payment counts.
+- `Date`: The specific day's date.
+- `Pageviews`: The count of page views each day.
+- `Clicks`: The total daily clicks for the specified page.
+- `Enrollments`: The number of enrollments per day.
+- `Payments`: The count of daily payments.
 
 ### Missing Data and Preprocessing
 
-We address missing data, incorrect formatting, and prepare the dataset for ML modeling. This includes:
+Our preprocessing steps resolve issues with data quality and readiness for ML analysis, ensuring:
 
-- Combining control and experiment data with identifiers.
-- Creating a "Day of Week" feature.
-- Dropping irrelevant columns and handling missing values.
-- Shuffling data for unbiased learning.
+- Merging of control and experimental data with clear identifiers.
+- Introduction of a "Day of Week" feature to capture temporal patterns.
+- Exclusion of extraneous columns and resolution of missing values.
+- Randomization of data to promote model generalizability.
 
 ## Machine Learning Models
 
-We will test the following algorithms:
+We evaluate the performance of the following models:
 
 - Linear Regression
 - Decision Trees
 - XGBoost
 
-### Dependencies
+## Key Steps
 
-- Pandas, NumPy
-- Matplotlib, Seaborn
-- scikit-learn
-- XGBoost
-- Statsmodels
+The project encompasses these core phases:
 
-### Usage
+- **Data Loading and Preprocessing**: Setting up the data for ML application.
+- **Exploratory Data Analysis**: Visualizing and understanding data traits.
+- **Feature Engineering**: Crafting features that can better inform model predictions.
+- **Model Training and Evaluation**: Applying ML algorithms and assessing their predictive prowess.
 
-The Jupyter Notebook is structured to guide you through four main tasks:
+## Prerequisites
 
-1. Loading the data.
-2. Performing exploratory data analysis.
-3. Preprocessing the data for modeling.
-4. Building and evaluating ML models.
+Engage with this project equipped with:
 
-Instructions for setting up, executing the analysis, and contributing to the project are outlined below.
+- A working knowledge of Python.
+- Familiarity with `pandas`, `scikit-learn`, and statistical concepts.
+
+## Setup
+
+Prepare your environment with these libraries:
+
+- `pandas`
+- `numpy`
+- `matplotlib`
+- `seaborn`
+- `scikit-learn`
+- `xgboost`
+- `statsmodels`
+
+## Usage
+
+The provided Jupyter Notebook details each analysis step, enabling replication or adaptation for your datasets. Follow these steps to start:
+
+1. Data acquisition.
+2. Preliminary data inspection.
+3. Data preparation for model fitting.
+4. Model building and validation.
 
 ## Running the Analysis
-To run the analysis, navigate to the notebook directory and launch the Jupyter notebook:
+
+Execute the analysis by launching the Jupyter notebook within the notebook's directory:
+
 ```bash
 jupyter notebook AB_Testing_using_ML.ipynb
 
+## Conclusion
+
+This project serves as a comprehensive guide for integrating ML into A/B testing frameworks. It demonstrates how ML can be applied to real-world business problems, providing a more nuanced understanding of user behavior and driving more effective business strategies.
+![image](https://github.com/alesanchez14/A-B-testing-using-Machine-Learning/assets/105001857/cfd9d9a9-d9ff-4635-acee-def31cf11d09)
